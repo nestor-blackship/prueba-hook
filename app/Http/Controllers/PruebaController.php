@@ -11,6 +11,7 @@ class PruebaController extends Controller
 
     public function prueba(Request $request){
         Log::info($request->all());
+        Log::info('Mensaje recibido de Heroku');
         return "Hola";
     }
 }
